@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake-News-Detection-Homepage</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="/"> <img src="/static/logo.png" alt="logo1"> </a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hide()"></i>
+                
+                <ul>
+                    <li> <a href="">HOME</a> </li>
+                    <li> <a href="#about">ABOUT</a> </li>
+                    <li> <a href="/prediction">PREDICTION</a> </li>
+                    <li> <a href="#contact-me">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+
+        <div class="inside-text">
+            <h1><em><b>FAKE NEWS DETECTION <br>USING<br> MACHINE LEARNING</b></em></h1>
+            <p>Today, the increased amount of information sources on internet creates the problem of information overflow.<br> Filtering the relevant and genuine information is another challenge social media facing now.</p>
+            <a href="/prediction" class="btn">Goto Predictor</a>
+        </div>
+    </section>
+
+
+    <!-----------next------------------------------------------------------------------------------------------------->
+    <section id="about">
+        <h1>ABOUT</h1>
+        <p>I am Anubhav joshi a passonate coder and try to learn something new everyday!!!</p>
+        <div class="row">
+            <div class="col">
+                <h3>ABOUT ME </h3>
+                <p>I had done my schooling from kendriya vidalaya OLF and currently pursuing B.Tech with computer science and engineering from graphic era hill university. My interest are in Machine learning and web development I also have knowledge about android app development using android studio.</p>       
+
+                </div>
+            <div class="col">
+                
+                <h3>ABOUT WEBSITE</h3>
+                <p>Fake news detection website is used to detect whether the given news is real or fake We aim to use a corpus of labeled real and fake new articles to build a classifier that can make decisions about information based on the content from the corpus. The model will focus on identifying fake news sources, based on multiple articles originating from a source. Once a source is labeled as a producer of fake news, we can predict with high confidence that any future articles from that source will also be fake news.Verifying the authenticity of news needs to have prime importance though a difficult task. This helps to eliminate the rumors from spreading through social platforms</p>
+            </div>
+            
+        </div>
+    
+    </section>
+    <br><br><br>
+ <!---next-----------------------------------------------------------------------------------   -->
+
+    <section id="contact-me">
+        <h1>CONTACT ME</h1><br>
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-home "></i>
+          <span>
+            <h5>SAINIK-ENCLAVE RAIPUR DEHRADUN , UTTARAKHAND 248001</h5>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-phone "></i>
+          <span>
+            <h5>+91-7906826756</h5>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-envelope-open "></i>
+          <span>
+            <h5>ANUBHAVJOSHI860@gmail.com</h5>
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!---next ---------------------------------------------------------------------------  -->
+    <section class="footer">
+      <h4>Contact me on socail media </h4>
+      <div class="social">
+          <a href="https://www.facebook.com/anubhav.joshi.1029"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/anubhav_joshii/"><i class="fa fa-instagram "></i></a>
+          <a href="https://www.linkedin.com/in/anubhav-joshi-92428a230"><i class="fa fa-linkedin "></i></a>
+    </div>
+    </section>
+    
+
+
+    <script>
+        var navL= document.getElementById("nav-links");
+        function show(){
+            navL.style.right="0";
+        }
+        function hide(){
+            navL.style.right="-200px";
+        }
+    </script>
+    
+    
+</body>
+</html>
+
+
+

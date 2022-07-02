@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction-Page</title>
+    <link rel="stylesheet" href="/static/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="/"> <img src="/static/logo.png" alt="logo1"> </a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hide()"></i>
+                
+                <ul>
+                    <li> <a href="/">HOME</a> </li>
+                    <li> <a href="/#about">ABOUT</a> </li>
+                    <li> <a href="/prediction">PREDICTION</a> </li>
+                    <li> <a href="/#contact-me">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+
+
+        <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+          <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+            <h1 class="inh1">Fake News Detection Prediction Page</h1>
+            <p class="inp">Predict wheteher the news is real or fake by entering the news headline below.</p>
+            <form action="/prediction" method="POST">
+            <div class="flex w-full justify-center items-end">
+                <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+                <label for="hero-field" class="inp">Enter News Headline</label>
+                <input type="text" id="news" name="news" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-red-200 focus:bg-transparent border border-gray-300 focus:border-red-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </div>
+            <p class="inp"><b><em>{{result}}</em></b></p>
+        </form>
+            
+          </div>
+        </div>
+   </section>
+
+    
+
+
+
+    <script>
+        var navL= document.getElementById("nav-links");
+        function show(){
+            navL.style.right="0";
+        }
+        function hide(){
+            navL.style.right="-200px";
+        }
+    </script>
+
+<section class="footer">
+  <h4>Contact me on socail media </h4>
+  <div class="social">
+      <a href="https://www.facebook.com/watch/live/?ref=live_delegate"><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-instagram "></i></a>
+      <a href=""><i class="fa fa-linkedin "></i></a>
+</div>
+</section>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
