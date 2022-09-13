@@ -1,1 +1,1 @@
-# FAke news detection
+# Fake news detection
